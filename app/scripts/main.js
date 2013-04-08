@@ -1,13 +1,19 @@
+/************************************************
+ * Hacks
+ *
+ * quo.js requirejs compatibility
+ * https://groups.google.com/forum/#!topic/quojs/o3Sh6KxPg3I
+ ************************************************/
+
 require.config({
     paths: {
         jquery: '../components/jquery/jquery',
         quo: '../components/quojs/quo',
+        twig: '../components/twig.js/twig'
     }
 });
 
-require(['app', 'jquery', 'quo'], function (app, $, $$) {
+require(['app'], function (app, $, $$) {
     'use strict';
-    // use app here
-    console.log(app);
-    console.log('Running jQuery %s', $().jquery);
+
 });

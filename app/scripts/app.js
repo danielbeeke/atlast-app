@@ -1,6 +1,3 @@
-/*global define */
-define([], function () {
-    'use strict';
-
-    return '\'Allo \'Allo!';
+define(['twigloader'], function ($) {
+    //Plugin code goes here.
 });
