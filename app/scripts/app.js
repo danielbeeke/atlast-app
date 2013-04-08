@@ -1,3 +1,3 @@
-define(['twigloader'], function ($) {
-    //Plugin code goes here.
+define(['twigloader', 'menu'], function ($) {
+
 });
