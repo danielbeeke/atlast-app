@@ -1,8 +1,12 @@
-body {
-    background: #fafafa;
-}
+// Variables.
+$shadow: #999999;
+$fontAwesomePath: '../components/font-awesome/font';
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-}
+$overlap: 50px;
+$overlap-double: $overlap * 2;
+
+// Imports.
+@import "font-awesome/sass/font-awesome.scss";
+@import "compass/css3";
+@import "layout";
+@import "map";

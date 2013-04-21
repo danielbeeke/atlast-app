@@ -8,11 +8,14 @@
 require.config({
     paths: {
         jquery: '../components/jquery/jquery',
-        quo: '../components/quojs/quo',
-        twig: '../components/twig.js/twig'
+        twig: '../components/twig.js/twig',
+        hammer: '../components/hammerjs/dist/hammer',
+        leaflet: '../components/leaflet/dist/leaflet'
     }
 });
 
-require(['app'], function (app, $, $$) {
-    'use strict';
+window.afterBootstrapFunctions = {};
+
+require(['app'], function (app, $) {
+  'use strict';
 });

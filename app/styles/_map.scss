@@ -1,0 +1,47 @@
+#map, #leaflet {
+  height: 100%;
+}
+
+#map-vignette-left, #map-vignette-right {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 15px;
+  z-index: 1;
+  @include opacity(0.0);
+  @include transition(all 2s);
+}
+
+#main.left .vignette, #main.right .vignette {
+  @include opacity(0.3);
+}
+
+#map-vignette-left {
+  @include background(linear-gradient(left, black, transparent));
+  left: 0px;
+}
+
+#map-vignette-right {
+  @include background(linear-gradient(right, black, transparent));
+  right: 0px;
+}
+
+#goto-left, #goto-right {
+  position: absolute;
+  top: 0;
+  font-size: 3em;
+  z-index: 3;
+  line-height: 0;
+  text-align: center;
+  width: 50px;
+  text-decoration: none !important;
+}
+
+#goto-left {
+  left: 0;
+}
+
+#goto-right {
+  right: 0;
+}

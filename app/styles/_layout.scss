@@ -1,0 +1,62 @@
+html, body, #main {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#main, #main.center {
+  position: absolute;
+  @include transition(all 0.6s ease-in);
+  @include transform(translateX($overlap));
+  > div {
+    position: absolute;
+    height: 100%;
+  }
+}
+
+#left-wrapper {
+  width: 100%;
+  left: -100%;
+  z-index: 1;
+}
+
+#left-inner {
+  margin-right: $overlap;
+  height: 100%;
+}
+
+#center-wrapper {
+  width: 100%;
+  z-index: 2;
+  margin-left: -$overlap;
+  margin-right: -$overlap;
+}
+
+#center-inner {
+  height: 100%;
+}
+
+#right-wrapper {
+  right: $overlap;
+  @include transform(translateX(100%));
+  width: 100%;
+  z-index: 1;
+}
+
+#right-inner {
+  margin-right: $overlap;
+  height: 100%;
+}
+
+#main.left {
+  @include transform(translateX(100%));
+}
+
+#main.right {
+  @include transform(translateX(- 100%) translateX($overlap-double));
+}
