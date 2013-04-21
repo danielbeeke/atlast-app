@@ -3,6 +3,7 @@ html, body, #main {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: 'Inder';
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 
 #main, #main.center {
   position: absolute;
-  @include transition(all 0.6s ease-in);
+  @include transition(all 0.6s ease-in-out);
   @include transform(translateX($overlap));
   > div {
     position: absolute;
@@ -22,12 +23,15 @@ body {
 #left-wrapper {
   width: 100%;
   left: -100%;
-  z-index: 1;
+  overflow: hidden;
 }
 
 #left-inner {
   margin-right: $overlap;
   height: 100%;
+  background: url(../images/squairy_light.png);
+  position: relative;
+  z-index: 4;
 }
 
 #center-wrapper {
@@ -45,7 +49,8 @@ body {
   right: $overlap;
   @include transform(translateX(100%));
   width: 100%;
-  z-index: 1;
+  z-index: 2;
+  background: url(../images/squairy_light.png);
 }
 
 #right-inner {

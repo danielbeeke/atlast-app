@@ -12,7 +12,7 @@ require.config({
         hammer: '../components/hammerjs/dist/hammer',
         jqueryHammer: '../components/hammerjs/dist/jquery.hammer',
         quo: '../components/quojs/quo.debug',
-        leaflet: '../components/leaflet/dist/leaflet'
+        leaflet: '../components/leaflet/dist/leaflet',
     }
 });
 

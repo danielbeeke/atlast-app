@@ -1,3 +1,4 @@
 {% for item in items %}
-  <a href="">{{ item.title }}</a>
+  <a class="menu-item" data-id="{{ item.id }}" data-type="{{ item.type }}" href="#"><i class="icon-{{ item.icon }}"></i>{{ item.title }}</a>
 {% endfor %}
+<div id="menu-item-expander"></div>

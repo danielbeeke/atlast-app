@@ -1,0 +1,9 @@
+<a href="#" id="close-popup"><i class="icon-remove"></i></a>
+{% if content %}
+  <div id="popup-content">
+    <h3>{{ title }}</h3>
+    <p>{{ content }}</p>
+  </div>
+{% else %}
+  <div class="loading"></div>
+{% endif %}

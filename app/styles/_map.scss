@@ -27,21 +27,31 @@
   right: 0px;
 }
 
-#goto-left, #goto-right {
+.panel-toggle {
   position: absolute;
+  background: url(../images/squairy_light.png);
   top: 0;
-  font-size: 3em;
+  font-size: 1.4em;
   z-index: 3;
-  line-height: 0;
+  line-height: $toggle-button-width;
   text-align: center;
-  width: 50px;
+  width: $toggle-button-width;
+  height: $toggle-button-width;
   text-decoration: none !important;
+  i {
+    vertical-align: middle;
+    color: $gray_dark;
+  }
 }
 
-#goto-left {
+#panel-toggle-left {
+  @include border-radius(0 0 5px 0);
+  @include box-shadow(-5px 3px 5px $gray_light);
   left: 0;
 }
 
-#goto-right {
+#panel-toggle-right {
+  @include box-shadow(5px 3px 5px $gray_light);
+  @include border-radius(0 0 0 5px);
   right: 0;
 }

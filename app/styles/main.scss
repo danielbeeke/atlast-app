@@ -2,11 +2,29 @@
 $shadow: #999999;
 $fontAwesomePath: '../components/font-awesome/font';
 
+$green_dark: #4e9a06;
+$green_light: #5fbc07;
+$green_shadow: #004500;
+$green_lightest: #f7fdf1;
+
+$blue_dark: #2e3436;
+
+$yellow: #fae014;
+
+$gray_light: #888a85;
+$gray_lighter: #D3D3D3;
+$gray_dark: #444444;
+
 $overlap: 50px;
+$toggle-button-width: 40px;
+
 $overlap-double: $overlap * 2;
 
 // Imports.
 @import "font-awesome/sass/font-awesome.scss";
 @import "compass/css3";
 @import "layout";
+@import "forms";
 @import "map";
+@import "menu";
+@import "popup";

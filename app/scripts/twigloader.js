@@ -28,7 +28,7 @@ define(['jquery', 'twig'], function ($) {
   }
 
   // Standard template names.
-  var baseTemplates = ['main', 'menu', 'map', 'mapfilters'];
+  var baseTemplates = ['main', 'menu', 'map', 'mapfilters', 'popup'];
 
   // Get standard templates.
   $.each(baseTemplates, function(index, templateName) {

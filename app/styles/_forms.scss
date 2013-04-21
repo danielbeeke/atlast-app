@@ -1,0 +1,15 @@
+input:not([type=submit]):not([type=file]) {
+  width: 100%;
+  display: table-cell;
+  @include box-sizing(border-box);
+  border: 1px solid $gray_light;
+  padding: 10px;
+  @include border-radius(3px);
+}
+
+.form-item {
+  display: table;
+  width: 100%;
+  @include box-sizing(border-box);
+  padding: 5px;
+}

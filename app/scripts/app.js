@@ -6,6 +6,6 @@
  *
  ********************************************************/
 
-define(['jquery', 'twigloader', 'menu', 'map', 'panelswitcher'], function ($) {
+define(['jquery', 'twigloader', 'menu', 'map', 'panelswitcher', 'webfont', 'popup'], function ($) {
 
 });
