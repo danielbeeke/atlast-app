@@ -1,9 +1,7 @@
-define(['jquery', 'hammer'], function ($) {
+define(['jquery', 'quo'], function ($) {
 
-  var el = document.getElementById('main');
-
-  Hammer(el).on("swipeleft", function() {
-      alert('you swiped left!');
+  $$('body').swipeLeft(function() {
+    console.log('test');
   });
 
 });
